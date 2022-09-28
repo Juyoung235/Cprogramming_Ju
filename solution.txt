@@ -1,0 +1,32 @@
+1. Write a program in a c program file named prog1.c that counts the number of periods in a file and writes the number to STDOUT
+	
+2. Use the functions fprintf() and sprintf() in a c program file named prog2.c
+	
+3. Use printf to answer the following questions (not the a calculator or the Internet). Include your code in a separate program file named prog3.c
+	
+    What is the octal representation of 42?
+    	52
+    What is the ASCII representation of 100?
+    	d
+    What is the decimal representation of ‘d’?
+    	100
+    What is the hexadecimal representation of ‘s’?
+    	73
+    	
+4. In step #1, what happens if you assign y[4] = 0x53; instead?
+	The string, y[5] is changed to TACOS, and hexadecimal is changed to 53.
+
+5. In step #2, why is there a null character? We didn’t create one!
+	Because y2 is pointer of y2. pointer has 8 sizes, but where y2 pointing is only 4 characters. So, y2 has 4characters and 4
+	nulls.
+	
+6. In step #2, why did it work to specify an index of 4 on y2, a character pointer?
+	y2 is pointing the address of memory what is saving string"TACO". It is same meaning that y2 is a string in C. So y2 can use
+	index of the memory.
+	
+7. What is the size of a variable that is a pointer?
+	A pointer y2 has size 8.
+	
+8. When printing the hex value of poof_youre_a_32bit_int, are the bytes the same as the ones you entered manually into y?
+	Yes. Those are same. Because the pointer "poof_youre_a_32bit_int" is pointing a pointer y. So, Those are pointing the same address
+	where "TACO" is saved.
